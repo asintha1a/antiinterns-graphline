@@ -1,0 +1,240 @@
+{
+  "offset": 4.278,
+  "duration": 230.071,
+  "events": [
+    {
+      "at": 0,
+      "chapter": "intro"
+    },
+    {
+      "at": 0.854,
+      "focus": ".intro h1",
+      "rect": {
+        "x": 280,
+        "y": 112,
+        "width": 607.78125,
+        "height": 33.34375
+      }
+    },
+    {
+      "at": 4.704,
+      "focus": "#dbStatus",
+      "rect": {
+        "x": 40,
+        "y": 817,
+        "width": 103.59375,
+        "height": 13
+      }
+    },
+    {
+      "at": 18.871,
+      "chapter": "inbox"
+    },
+    {
+      "at": 25.185,
+      "focus": ".context-panel",
+      "rect": {
+        "x": 1276,
+        "y": 197.140625,
+        "width": 290,
+        "height": 664.859375
+      }
+    },
+    {
+      "at": 38.216,
+      "chapter": "delivery"
+    },
+    {
+      "at": 45.086,
+      "focus": "#graphPath",
+      "rect": {
+        "x": 1277,
+        "y": 302.140625,
+        "width": 288,
+        "height": 200
+      }
+    },
+    {
+      "at": 47.385,
+      "focus": "#decisionCard",
+      "rect": {
+        "x": 1292,
+        "y": 503.140625,
+        "width": 258,
+        "height": 79
+      }
+    },
+    {
+      "at": 59.595,
+      "chapter": "refund"
+    },
+    {
+      "at": 65.685,
+      "focus": ".ticket-badge",
+      "rect": {
+        "x": 1302,
+        "y": 631.140625,
+        "width": 238,
+        "height": 28
+      }
+    },
+    {
+      "at": 68.186,
+      "focus": "#counts",
+      "rect": {
+        "x": 1290,
+        "y": 888.640625,
+        "width": 262,
+        "height": 34
+      }
+    },
+    {
+      "at": 80.911,
+      "chapter": "human"
+    },
+    {
+      "at": 86.885,
+      "focus": ".ticket-badge",
+      "rect": {
+        "x": 1302,
+        "y": 631.640625,
+        "width": 238,
+        "height": 28
+      }
+    },
+    {
+      "at": 91.334,
+      "focus": "#decisionCard",
+      "rect": {
+        "x": 1292,
+        "y": 539.140625,
+        "width": 258,
+        "height": 127.5
+      }
+    },
+    {
+      "at": 99.843,
+      "chapter": "memory"
+    },
+    {
+      "at": 108.816,
+      "focus": "#memory",
+      "rect": {
+        "x": 1277,
+        "y": 512.140625,
+        "width": 288,
+        "height": 230
+      }
+    },
+    {
+      "at": 123.857,
+      "chapter": "persistence"
+    },
+    {
+      "at": 124.684,
+      "focus": "#refresh",
+      "rect": {
+        "x": 506,
+        "y": 61.140625,
+        "width": 28,
+        "height": 28
+      }
+    },
+    {
+      "at": 126.765,
+      "focus": "#counts",
+      "rect": {
+        "x": 1290,
+        "y": 565.140625,
+        "width": 262,
+        "height": 34
+      }
+    },
+    {
+      "at": 127.6,
+      "focus": "#messages",
+      "rect": {
+        "x": 565,
+        "y": 259.140625,
+        "width": 696,
+        "height": 491.859375
+      }
+    },
+    {
+      "at": 138.969,
+      "chapter": "queries"
+    },
+    {
+      "at": 145.832,
+      "focus": "#result",
+      "rect": {
+        "x": 67,
+        "y": 412.59375,
+        "width": 1466,
+        "height": 200.5
+      }
+    },
+    {
+      "at": 149.416,
+      "focus": "#result",
+      "rect": {
+        "x": 67,
+        "y": 412.59375,
+        "width": 1466,
+        "height": 200.5
+      }
+    },
+    {
+      "at": 158.371,
+      "chapter": "graphmemory"
+    },
+    {
+      "at": 162.383,
+      "focus": "#result",
+      "rect": {
+        "x": 67,
+        "y": 412.59375,
+        "width": 1466,
+        "height": 470
+      }
+    },
+    {
+      "at": 181.645,
+      "chapter": "scope"
+    },
+    {
+      "at": 186.299,
+      "focus": ".scope-grid",
+      "rect": {
+        "x": 67,
+        "y": 383.796875,
+        "width": 1466,
+        "height": 208.765625
+      }
+    },
+    {
+      "at": 206.825,
+      "chapter": "setup"
+    },
+    {
+      "at": 211.516,
+      "focus": "#query",
+      "rect": {
+        "x": 67,
+        "y": 291,
+        "width": 1466,
+        "height": 159.1875
+      }
+    },
+    {
+      "at": 214.816,
+      "focus": ".link",
+      "rect": {
+        "x": 67,
+        "y": 653.046875,
+        "width": 1466,
+        "height": 37.390625
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Ari asks to speak with a human agent. The graph routes the case to Support and creates a ticket. An unrecognized invoice question also falls back to human assistance. This prototype records the handoff and replies with that outcome. It does not simulate a support employee completing the case.

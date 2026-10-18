@@ -1,0 +1,1 @@
+This is Graphline, an ANTIINTERNS support agent built for Graph Hacks. It uses Falkor DB to connect customers, conversations, policies and teams. We will follow real local interactions, see the agent take action, and inspect the graph records behind those decisions.

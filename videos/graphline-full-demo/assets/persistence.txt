@@ -1,0 +1,1 @@
+Reloading the browser keeps the customer conversations and ticket counts. They are retrieved again from Falkor DB. The interface is a view over persistent graph records. It is not keeping the customer history only in browser memory.

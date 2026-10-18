@@ -1,0 +1,1 @@
+Now Maya requests a refund. That matches a different intent. The connected returns policy requires a person, so the agent creates a ticket in Falkor DB and links it to the conversation, the intent and the Returns team. The ticket count updates from the live graph. This is a recorded action, not just a generated suggestion.

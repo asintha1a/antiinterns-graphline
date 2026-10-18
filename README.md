@@ -1,4 +1,4 @@
-# Graphline — ANTIINTERNS
+# Graphline: ANTIINTERNS
 
 **A FalkorDB-first support agent that uses connected customer context to answer, route and remember.**
 
@@ -17,8 +17,8 @@ Intent, policy, route, memory and ticket decisions are deterministic graph opera
 
 ## Hackathon tracks
 
-- **Agents That Act on Connected Data** — an agent uses multi-hop graph context to select a policy, route a case and create a ticket.
-- **Agent Memory and Coordination** — customer conversation history persists as graph memory, and the graph routes work to the right team.
+- **Agents That Act on Connected Data:** an agent uses multi-hop graph context to select a policy, route a case and create a ticket.
+- **Agent Memory and Coordination:** customer conversation history persists as graph memory, and the graph routes work to the right team.
 
 The demo implements these two tracks. It does not claim a full Company Brain product.
 
@@ -53,9 +53,11 @@ docker compose down -v
 
 ## Demo assets
 
-- [`demo.mp4`](demo.mp4) is a short, captioned walkthrough assembled from real screenshots of this local app after exercising delivery routing, refund ticket creation and cross-conversation memory.
+- [`demo.mp4`](demo.mp4) is the full 3 minute 50 second project walkthrough: continuous browser recording with actual typing, clicks, delivery routing, refund and human tickets, customer memory, browser reload and live Cypher results. It includes camera reframing, chapter labels, captions and locally synthesized narration.
 - [`screenshots/`](screenshots/) contains the captured inbox and action states; every record shown is synthetic.
-- Re-capture screenshots on macOS with `node tools/capture-demo.js` while the app is running. Rebuild the MP4 with `./tools/build-demo-video.sh` (requires FFmpeg, Python 3 and Pillow).
+- The editable motion project is in [`videos/graphline-full-demo/`](videos/graphline-full-demo/), with capture scripts, narration, subtitles and the source recording. See its README for regeneration. The separate presenter query view is explicitly labeled as a read-only recording aid, not another product module. It runs real queries against the isolated synthetic recording graph.
+- [`YOUTUBE_UPLOAD.md`](YOUTUBE_UPLOAD.md) provides the video title, description and chapter timestamps.
+- The earlier screenshot capture tool remains in `tools/capture-demo.js`; the full video uses `tools/record-full-demo.cjs`.
 
 ## Graph model
 
@@ -100,7 +102,7 @@ OpenAI Codex assisted with implementation and documentation. The project owner m
 
 The original WhatsApp automation platform predates this standalone entry and is not presented as hackathon-created work. This FalkorDB-first Graphline prototype is a separate implementation started on **18 October 2026** for the Graph Hacks submission. Preserve the project history and be prepared to explain the distinction. Confirm the organizer's current eligibility interpretation before submission if any earlier work on this prototype exists outside this folder.
 
-Official event rules: [Graph Hacks by WeMakeDevs and FalkorDB](https://www.wemakedevs.org/hackathons/falkordb). The event rules require the main FalkorDB implementation to be new work during the event, a public source repository, the graph model and Cypher queries, a working demo video, local setup instructions if not deployed, named track(s), and disclosure of AI coding assistance. This folder contains the source, local setup, queries, tracks and demo video; it is not yet published as a public repository.
+Official event rules: [Graph Hacks by WeMakeDevs and FalkorDB](https://www.wemakedevs.org/hackathons/falkordb). The event rules require the main FalkorDB implementation to be new work during the event, a public source repository, the graph model and Cypher queries, a working demo video, local setup instructions if not deployed, named track(s), and disclosure of AI coding assistance. The public source repository is [asintha1a/antiinterns-graphline](https://github.com/asintha1a/antiinterns-graphline). It contains the source, local setup, graph model, Cypher, tracks and demo video.
 
 ## License
 

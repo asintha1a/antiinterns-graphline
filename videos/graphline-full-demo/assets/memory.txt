@@ -1,0 +1,1 @@
+Next, we create a fresh conversation using the same synthetic customer name. Graphline links it to the existing customer record. After a new delivery message, the agent traverses that customer's earlier conversations and retrieves their messages. The memory panel shows the actual earlier exchange, including the refund request, across the conversation boundary.

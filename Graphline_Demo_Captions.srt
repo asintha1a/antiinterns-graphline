@@ -1,0 +1,263 @@
+1
+00:00:00,200 --> 00:00:04,726
+This is Graphline, an ANTIINTERNS support agent built for Graph Hacks.
+
+2
+00:00:04,726 --> 00:00:09,251
+It uses Falkor DB to connect customers, conversations, policies and teams.
+
+3
+00:00:09,251 --> 00:00:14,188
+We will follow real local interactions, see the agent take action, and
+
+4
+00:00:14,188 --> 00:00:17,068
+inspect the graph records behind those decisions.
+
+5
+00:00:19,068 --> 00:00:23,043
+The inbox loads its conversations and record counts from Falkor DB.
+
+6
+00:00:23,043 --> 00:00:25,572
+This workspace contains only synthetic sample data.
+
+7
+00:00:25,572 --> 00:00:28,824
+We can search for Maya and open her conversation.
+
+8
+00:00:28,824 --> 00:00:30,992
+The chat is in the center.
+
+9
+00:00:30,992 --> 00:00:35,328
+On the right, the application will show the actual decision path and
+
+10
+00:00:35,328 --> 00:00:36,412
+earlier customer context.
+
+11
+00:00:38,412 --> 00:00:42,422
+Maya says her delivery is late and the tracking has not changed.
+
+12
+00:00:42,422 --> 00:00:45,763
+The agent matches words against keyword nodes in the graph.
+
+13
+00:00:45,763 --> 00:00:49,773
+It follows the selected delivery intent to the approved delivery policy and
+
+14
+00:00:49,773 --> 00:00:50,776
+the Logistics team.
+
+15
+00:00:50,776 --> 00:00:53,115
+The reply asks for an order number.
+
+16
+00:00:53,115 --> 00:00:57,125
+The decision panel explains the path and identifies the reply source as
+
+17
+00:00:57,125 --> 00:00:57,793
+graph policy.
+
+18
+00:00:59,793 --> 00:01:01,517
+Now Maya requests a refund.
+
+19
+00:01:01,517 --> 00:01:03,242
+That matches a different intent.
+
+20
+00:01:03,242 --> 00:01:07,381
+The connected returns policy requires a person, so the agent creates a
+
+21
+00:01:07,381 --> 00:01:11,519
+ticket in Falkor DB and links it to the conversation, the intent
+
+22
+00:01:11,519 --> 00:01:12,899
+and the Returns team.
+
+23
+00:01:12,899 --> 00:01:15,658
+The ticket count updates from the live graph.
+
+24
+00:01:15,658 --> 00:01:19,107
+This is a recorded action, not just a generated suggestion.
+
+25
+00:01:21,107 --> 00:01:23,872
+Ari asks to speak with a human agent.
+
+26
+00:01:23,872 --> 00:01:27,674
+The graph routes the case to Support and creates a ticket.
+
+27
+00:01:27,674 --> 00:01:31,130
+An unrecognized invoice question also falls back to human assistance.
+
+28
+00:01:31,130 --> 00:01:34,586
+This prototype records the handoff and replies with that outcome.
+
+29
+00:01:34,586 --> 00:01:38,042
+It does not simulate a support employee completing the case.
+
+30
+00:01:40,042 --> 00:01:45,121
+Next, we create a fresh conversation using the same synthetic customer name.
+
+31
+00:01:45,121 --> 00:01:48,507
+Graphline links it to the existing customer record.
+
+32
+00:01:48,507 --> 00:01:53,585
+After a new delivery message, the agent traverses that customer's earlier conversations
+
+33
+00:01:53,585 --> 00:01:55,278
+and retrieves their messages.
+
+34
+00:01:55,278 --> 00:02:00,357
+The memory panel shows the actual earlier exchange, including the refund request,
+
+35
+00:02:00,357 --> 00:02:02,050
+across the conversation boundary.
+
+36
+00:02:04,050 --> 00:02:07,595
+Reloading the browser keeps the customer conversations and ticket counts.
+
+37
+00:02:07,595 --> 00:02:10,076
+They are retrieved again from Falkor DB.
+
+38
+00:02:10,076 --> 00:02:13,266
+The interface is a view over persistent graph records.
+
+39
+00:02:13,266 --> 00:02:17,165
+It is not keeping the customer history only in browser memory.
+
+40
+00:02:19,165 --> 00:02:23,260
+This read only presenter view runs Cypher directly against the same demonstration
+
+41
+00:02:23,260 --> 00:02:23,601
+graph.
+
+42
+00:02:23,601 --> 00:02:27,695
+The first query follows each intent to its policy and responsible team.
+
+43
+00:02:27,695 --> 00:02:31,790
+The next query shows the tickets we just created, along with their
+
+44
+00:02:31,790 --> 00:02:32,472
+assigned teams.
+
+45
+00:02:32,472 --> 00:02:36,567
+These results are read from Falkor DB while this recording is running.
+
+46
+00:02:38,566 --> 00:02:43,382
+The memory query follows Maya's customer node to every connected conversation and
+
+47
+00:02:43,382 --> 00:02:43,783
+message.
+
+48
+00:02:43,783 --> 00:02:48,599
+The earlier and later messages appear together because the customer relationship connects
+
+49
+00:02:48,599 --> 00:02:49,000
+them.
+
+50
+00:02:49,000 --> 00:02:53,415
+The graph summary also shows the real node and relationship counts.
+
+51
+00:02:53,415 --> 00:02:58,231
+Removing Falkor DB removes the records, routing context, policies and ticket actions
+
+52
+00:02:58,231 --> 00:02:59,836
+this application depends on.
+
+53
+00:03:01,836 --> 00:03:04,497
+The source includes optional OpenRouter reply drafting.
+
+54
+00:03:04,497 --> 00:03:09,058
+Without a configured key, as in this recording, the graph's stored response
+
+55
+00:03:09,058 --> 00:03:09,818
+is used.
+
+56
+00:03:09,818 --> 00:03:14,379
+A language model can help phrase an answer, but the graph still
+
+57
+00:03:14,379 --> 00:03:17,420
+owns intent matching, memory, routing and ticket creation.
+
+58
+00:03:17,420 --> 00:03:21,981
+This standalone prototype does not connect to WhatsApp or send external messages.
+
+59
+00:03:21,981 --> 00:03:25,022
+A real channel adapter is future integration work.
+
+60
+00:03:27,022 --> 00:03:32,447
+The public repository contains the source, graph model, Cypher queries and local
+
+61
+00:03:32,447 --> 00:03:33,351
+setup instructions.
+
+62
+00:03:33,351 --> 00:03:37,872
+Start Falkor DB with Docker Compose, then run npm start.
+
+63
+00:03:37,872 --> 00:03:41,940
+The README discloses Codex assistance and the project's scope.
+
+64
+00:03:41,940 --> 00:03:46,009
+Graphline demonstrates connected data actions and persistent customer memory.
+
+65
+00:03:46,009 --> 00:03:46,461
+ANTIINTERNS.
+
+66
+00:03:46,461 --> 00:03:48,269
+We take work personally.

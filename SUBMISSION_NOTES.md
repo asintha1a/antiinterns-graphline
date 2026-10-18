@@ -30,6 +30,6 @@ OpenAI Codex assisted with source code, UI, and documentation. The participant i
 - [x] Synthetic data only.
 - [x] Track names included in README: Agents That Act on Connected Data; Agent Memory and Coordination.
 - [x] Local setup instructions included.
-- [ ] Publish a public source repository.
-- [x] Include a captioned demo video built from real local app captures of graph-backed actions.
+- [x] Publish a public source repository: https://github.com/asintha1a/antiinterns-graphline.
+- [x] Include a full narrated demo video with continuous browser recording of graph-backed actions and live read-only Cypher evidence.
 - [ ] Confirm current event rules and entry eligibility with organizers before submitting.

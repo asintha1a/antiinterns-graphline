@@ -1,0 +1,1 @@
+Maya says her delivery is late and the tracking has not changed. The agent matches words against keyword nodes in the graph. It follows the selected delivery intent to the approved delivery policy and the Logistics team. The reply asks for an order number. The decision panel explains the path and identifies the reply source as graph policy.

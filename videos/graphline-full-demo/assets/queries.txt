@@ -1,0 +1,1 @@
+This read only presenter view runs Cypher directly against the same demonstration graph. The first query follows each intent to its policy and responsible team. The next query shows the tickets we just created, along with their assigned teams. These results are read from Falkor DB while this recording is running.

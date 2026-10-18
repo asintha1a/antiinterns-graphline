@@ -3,3 +3,18 @@
 node_modules/
 *.log
 tools/.video-frames/
+
+videos/**/.hyperframes/
+videos/**/work-*/
+videos/**/assets/raw/
+videos/**/assets/capture.webm
+videos/**/Graphline_Full_Project_Demo.mp4
+videos/**/check-result.json
+videos/**/doctor.json
+# System font files stay local. The video project documents font preparation.
+videos/**/assets/Arial*.ttf
+videos/**/.thumbnails/
+videos/**/.waveform-cache/
+# Generated source media is retained in the local editable bundle.
+videos/**/assets/*.wav
+videos/**/assets/screen.mp4
