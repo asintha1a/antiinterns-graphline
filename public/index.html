@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101827" />
+  <meta name="description" content="A FalkorDB-powered customer support agent that remembers connected context and routes work." />
+  <title>Graphline — ANTIINTERNS</title>
+  <link rel="icon" href="/mark.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="ANTIINTERNS Graphline home">
+        <span class="brand-mark">AN<span>(ti)</span>INTERNS</span>
+        <span class="brand-caption">GRAPH SUPPORT AGENT</span>
+      </a>
+      <div class="workspace-label">WORKSPACE</div>
+      <div class="workspace"><span class="workspace-dot"></span><span>Sample Support Workspace</span><span class="chevron">⌄</span></div>
+      <div class="nav-title">INBOX</div>
+      <button class="nav-item active"><span class="nav-icon">▤</span> Conversations <span class="nav-count" id="inboxCount">0</span></button>
+      <div class="side-bottom">
+        <div class="graph-status"><span class="pulse"></span><div><b>FalkorDB</b><small id="dbStatus">Connecting…</small></div></div>
+        <div class="side-note">Graph-powered memory<br />Synthetic sample workspace</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="crumb">Graphline <span>/</span> <b>Support inbox</b></div>
+        <div class="top-actions"><span class="track-chip">GRAPH HACKS · FALKORDB</span><button id="newConversation" class="button button-outline">＋ New conversation</button></div>
+      </header>
+      <div class="intro">
+        <div><p class="eyebrow">CONNECTED CONTEXT. REAL ACTIONS.</p><h1>Support that remembers<br class="mobile-break" /> the whole picture.</h1><p class="subhead">The agent follows customer, intent, policy and team connections in FalkorDB before it replies or routes a case.</p></div>
+        <div class="demo-label"><span class="demo-dot"></span> Demo workspace <span class="demo-divider">·</span> Synthetic data</div>
+      </div>
+
+      <section class="workspace-grid">
+        <aside class="conversation-panel panel">
+          <div class="panel-heading"><div><h2>Conversations</h2><span class="muted" id="conversationSub">Loading graph records…</span></div><button id="refresh" class="icon-button" title="Refresh">↻</button></div>
+          <label class="search"><span>⌕</span><input id="search" placeholder="Search conversations" /></label>
+          <div id="conversationList" class="conversation-list"></div>
+          <div class="list-foot"><span class="live-dot"></span> Live from FalkorDB</div>
+        </aside>
+
+        <section class="chat-panel panel">
+          <div id="chatHeader" class="chat-header"><div class="avatar">G</div><div class="chat-person"><b>Select a conversation</b><small>Connected customer memory</small></div><span class="open-status">OPEN</span></div>
+          <div id="messages" class="messages"><div class="empty-chat"><div class="empty-symbol">↗</div><h3>Choose a conversation</h3><p>Send a message to see the graph agent resolve context, create a reply and route work.</p></div></div>
+          <div class="composer-wrap">
+            <div class="suggestions"><span>Try:</span><button class="suggestion" data-text="My delivery is late and tracking has not changed">Delivery issue</button><button class="suggestion" data-text="I returned my item and need a refund">Return / refund</button><button class="suggestion" data-text="Please connect me with a human agent">Human handoff</button></div>
+            <form id="composer" class="composer"><textarea id="messageInput" rows="1" placeholder="Write a customer message…" required></textarea><button id="sendButton" class="send-button" type="submit" aria-label="Send message">↑</button></form>
+            <div class="composer-foot"><span>Demo messages and generated replies are synthetic.</span><span>Enter to send · Shift + Enter for a new line</span></div>
+          </div>
+        </section>
+
+        <aside class="context-panel">
+          <section class="panel graph-panel">
+            <div class="panel-heading"><div><p class="eyebrow small-eyebrow">LIVE GRAPH TRACE</p><h2>Why this action?</h2></div><span class="graph-glyph">⌘</span></div>
+            <p class="muted trace-intro">Every step below comes from connected FalkorDB records.</p>
+            <div id="graphPath" class="graph-path"><div class="trace-placeholder">Send a message to inspect the graph path the agent followed.</div></div>
+            <div id="decisionCard" class="decision-card hidden"></div>
+          </section>
+          <section class="panel memory-panel">
+            <div class="panel-heading"><div><p class="eyebrow small-eyebrow">PERSISTENT MEMORY</p><h2>Customer history</h2></div><span class="memory-glyph">◎</span></div>
+            <div id="memory" class="memory-empty">Prior conversations for this customer appear here when available.</div>
+          </section>
+          <section class="graph-stats">
+            <div class="stats-heading"><span>GRAPH RECORDS</span><span class="graph-badge">FalkorDB</span></div>
+            <div id="counts" class="counts"><div><b>—</b><span>Customers</span></div><div><b>—</b><span>Intents</span></div><div><b>—</b><span>Tickets</span></div></div>
+          </section>
+        </aside>
+      </section>
+      <footer class="footer"><span>AN(ti)INTERNS™ · “We take work personally.”</span><span>Graphline is a hackathon prototype · No real customer data</span></footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

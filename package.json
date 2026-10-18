@@ -1,0 +1,8 @@
+{
+  "name": "antiinterns-graph-hacks-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FalkorDB-first conversation memory and action agent for WhatsApp support teams",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" }
+}
