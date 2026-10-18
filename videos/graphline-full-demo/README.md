@@ -39,7 +39,7 @@ Run FalkorDB with the repository's Docker Compose file. Install Playwright in a 
 node tools/record-full-demo.cjs
 ```
 
-The capture tool creates a separate `antiinterns_recording_demo` graph with synthetic data and an app instance on 4174. Its read-only presenter uses port 4175. It does not use the normal application graph. A new take resets only that explicitly named recording graph. It writes a continuous WebM under `assets/capture.webm` and stores its lead-in offset in `capture-events.json`. Trim that lead-in and encode `assets/screen.mp4` with H.264 and one-second keyframes before rebuilding the edit. Raw takes and local render caches are ignored in Git.
+The capture tool creates a separate `antiinterns_recording_demo` graph with synthetic data and an app instance on 4174. Its read-only presenter uses port 4175. It does not use the normal application graph. A new take resets only that explicitly named recording graph. It writes a continuous WebM under `assets/capture.webm` and stores its lead-in offset in `capture-events.json`. Run `python3 scripts/prepare-screen.py` from the video project directory to trim that lead-in and encode `assets/screen.mp4` with H.264 and one-second keyframes before rebuilding the edit. Raw takes and local render caches are ignored in Git.
 
 For changed narration, edit `scripts/plan.json`, run `python3 scripts/generate-voice.py`, record again, then rebuild. Speech timing determines chapter duration.
 

@@ -1,10 +1,10 @@
 # Video verification
 
-- Final artifact: `Graphline_Full_Project_Demo.mp4`, copied to repository `demo.mp4`.
+- Full-quality artifact: `Graphline_Full_Project_Demo.mp4`, supplied locally and in the editable ZIP. The public repository uses a smaller H.264 copy at `demo.mp4`; its running time, dimensions, frame rate and audio are unchanged.
 - Duration: 230.083 seconds.
 - Video: H.264, 1920 by 1080, 24 frames per second.
 - Audio: AAC, 48 kHz, stereo. Mean level -16.3 dB, maximum -1.5 dB.
-- File size: 39,172,476 bytes.
+- Full-quality file size: 39,172,476 bytes. The repository copy is compressed further for reliable upload.
 - Visual source: continuous Playwright browser recording of the real local app and a clearly labeled read-only query presenter. Typing, clicks, replies and graph operations were performed during the take.
 - Eleven chapter frames were extracted from the encoded MP4 and visually inspected. The contact sheet is in `qa/contact-sheet.jpg`.
 - HyperFrames final checks passed with zero runtime, layout or contrast errors. Three timeline-density warnings remain because chapter labels share tracks; these concern editor organization rather than video content.
